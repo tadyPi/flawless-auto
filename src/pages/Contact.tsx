@@ -85,7 +85,7 @@ const Contact = () => {
               Get Your Free Quote
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Ready to restore your vehicle to flawless condition? Contact us today for a free estimate 
+              Ready to restore your vehicle to flawless condition? Contact us today for a free estimate
               and consultation. We're here to help with all your auto body repair needs.
             </p>
           </div>
@@ -99,7 +99,7 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Request a Quote</h2>
-              
+
               {isSubmitted ? (
                 <div className="text-center py-12">
                   <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
@@ -251,11 +251,9 @@ const Contact = () => {
               {/* Map Placeholder */}
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Find Us</h3>
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <div className="bg-transparent h-64 rounded-lg flex items-center justify-center">
                   <div className="text-center text-gray-500">
-                    <MapPin className="h-12 w-12 mx-auto mb-2" />
-                    <p>Interactive Map</p>
-                    <p className="text-sm">123 Auto Repair Ave</p>
+                    <img src="/flawlessauto.png" className="object-cover border border-gray-300 mx-auto mb-2" />
                   </div>
                 </div>
               </div>
