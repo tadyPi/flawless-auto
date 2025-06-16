@@ -14,19 +14,19 @@ const About = () => {
     {
       name: 'Mike Johnson',
       role: 'Master Technician & Owner',
-      image: 'https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg',
+      image: 'https://placehold.co/400x400',
       bio: 'With over 20 years in automotive refinishing, Mike founded Flawless Auto with a vision of providing uncompromising quality and service.'
     },
     {
       name: 'Sarah Martinez',
       role: 'Paint Specialist',
-      image: ' https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg',
+      image: 'https://placehold.co/400x400',
       bio: 'Sarah brings 12 years of experience in custom paint work and color matching, ensuring every finish meets our exacting standards.'
     },
     {
       name: 'David Chen',
       role: 'Collision Repair Expert',
-      image: 'https://images.pexels.com/photos/1181524/pexels-photo-1181524.jpeg',
+      image: 'https://placehold.co/400x400',
       bio: 'David specializes in structural repairs and frame alignment, bringing precision engineering to every collision repair job.'
     }
   ];
@@ -65,7 +65,7 @@ const About = () => {
                 About Flawless Auto Refinishing
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                For over 15 years, we've been the trusted choice for automotive body repair and refinishing. 
+                For over 15 years, we've been the trusted choice for automotive body repair and refinishing.
                 Our commitment to excellence and attention to detail has made us a leader in the industry.
               </p>
               <Link
@@ -111,17 +111,17 @@ const About = () => {
               </h2>
               <div className="space-y-6 text-gray-600 leading-relaxed">
                 <p>
-                  Flawless Auto Refinishing was founded in 2009 with a simple mission: to provide the highest quality 
+                  Flawless Auto Refinishing was founded in 2009 with a simple mission: to provide the highest quality
                   automotive body repair and refinishing services with unmatched customer service.
                 </p>
                 <p>
-                  What started as a small shop with big dreams has grown into one of the region's most trusted 
-                  auto body repair facilities. Our success is built on a foundation of skilled craftsmanship, 
+                  What started as a small shop with big dreams has grown into one of the region's most trusted
+                  auto body repair facilities. Our success is built on a foundation of skilled craftsmanship,
                   honest business practices, and a genuine care for our customers.
                 </p>
                 <p>
-                  Today, we continue to invest in the latest technology and training to ensure we can handle 
-                  everything from minor touch-ups to major collision repairs with the same level of excellence 
+                  Today, we continue to invest in the latest technology and training to ensure we can handle
+                  everything from minor touch-ups to major collision repairs with the same level of excellence
                   that has defined our reputation.
                 </p>
               </div>
