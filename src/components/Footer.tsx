@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Car, Phone, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 dark:bg-gray-950 text-white transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 lg:col-span-2">
@@ -57,7 +57,6 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Hours & Links</h3>
             <div className="space-y-3 mb-6">
               <div className="flex items-center space-x-3">
-                <Clock className="h-5 w-5 text-blue-400 dark:text-blue-300" />
                 <div className="text-gray-300 dark:text-gray-400">
                   <p>Mon-Fri: 8AM-6PM</p>
                   <p>Sat: 9AM-4PM</p>
