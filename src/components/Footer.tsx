@@ -10,9 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
-              <div className="bg-blue-600 dark:bg-blue-700 p-2 rounded-lg">
-                <Car className="h-8 w-8 text-white" />
-              </div>
+              <img src="/flawless-7.webp" className="bg-transparent object-cover w-16 h-16 p-2 rounded-lg" alt="Flawless Auto Logo" />
               <div>
                 <h2 className="text-xl font-bold">Flawless Auto</h2>
                 <p className="text-blue-400 dark:text-blue-300 font-medium">Refinishing</p>
