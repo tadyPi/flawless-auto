@@ -23,7 +23,7 @@ const Services = () => {
         'Insurance claim assistance',
         'Free damage assessment'
       ],
-      image: "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg"
+      image: "/flawless-1.webp"
     },
     {
       icon: Palette,
@@ -35,7 +35,7 @@ const Services = () => {
         'Clear coat application',
         'Paint protection services'
       ],
-      image: "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg"
+      image: "/flawless-2.webp"
     },
     {
       icon: Car,
@@ -47,7 +47,7 @@ const Services = () => {
         'Panel repair and replacement',
         'Bumper restoration'
       ],
-      image: "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg"
+      image: "/flawless-3.webp"
     },
     {
       icon: Shield,
@@ -59,7 +59,7 @@ const Services = () => {
         'Undercoating services',
         'Preventive maintenance'
       ],
-      image: "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg"
+      image: "/flawless-1.webp"
     },
     {
       icon: Zap,
@@ -71,7 +71,7 @@ const Services = () => {
         'Ceramic coating application',
         'Headlight restoration'
       ],
-      image: "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg"
+      image: "/flawless-4.webp"
     },
     {
       icon: Settings,
@@ -83,14 +83,14 @@ const Services = () => {
         'Vintage car restoration',
         'Fleet vehicle services'
       ],
-      image: "https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg"
+      image: "/flawless-5.webp"
     }
   ];
 
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-20">
+      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 dark:from-blue-950 dark:via-blue-900 dark:to-blue-950 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -105,13 +105,13 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="relative h-64 overflow-hidden">
                   <img
@@ -119,20 +119,20 @@ const Services = () => {
                     alt={service.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute top-4 left-4 bg-blue-600 p-3 rounded-lg">
+                  <div className="absolute top-4 left-4 bg-blue-600 dark:bg-blue-700 p-3 rounded-lg">
                     <service.icon className="h-6 w-6 text-white" />
                   </div>
                 </div>
 
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{service.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">{service.description}</p>
 
                   <ul className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center space-x-3">
                         <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
+                        <span className="text-gray-700 dark:text-gray-300">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -144,13 +144,13 @@ const Services = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Our Process
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600 dark:text-gray-300">
               A systematic approach to quality automotive refinishing.
             </p>
           </div>
@@ -163,11 +163,11 @@ const Services = () => {
               { step: '04', title: 'Quality Check', description: 'Final inspection and customer approval' }
             ].map((process, index) => (
               <div key={index} className="text-center">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-blue-600">{process.step}</span>
+                <div className="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-blue-600 dark:text-blue-300">{process.step}</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{process.title}</h3>
-                <p className="text-gray-600">{process.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{process.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{process.description}</p>
               </div>
             ))}
           </div>
@@ -175,7 +175,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-600 dark:to-orange-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Get Started?

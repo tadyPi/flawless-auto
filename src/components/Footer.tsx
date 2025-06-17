@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-gray-300 dark:text-gray-400 mb-6 max-w-md leading-relaxed">
-              Professional auto body repair and refinishing services with over 15 years of experience. 
+              Professional auto body repair and refinishing services with over 15 years of experience.
               We restore your vehicle to its original beauty with precision and care.
             </p>
             <div className="flex space-x-4">
@@ -83,7 +83,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 dark:border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400 dark:text-gray-500">
-            © 2024 Flawless Auto Refinishing. All rights reserved.
+            © 2025 Flawless Auto Refinishing. All rights reserved.
           </p>
         </div>
       </div>
